@@ -1,0 +1,65 @@
+ body{
+     
+     overflow-x: hidden;
+    background: url('../img/Screenshot_1.png') repeat center center / cover;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    color: #ffffff;
+
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchInput{
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 50px;
+    outline: none;
+    width: 50%;
+    margin: 3rem auto;
+    padding: 15px;
+    transition: 0.3s ease;
+    font-weight: 700;
+}
+.searchInput:focus{
+    border-color:#467eb6cb ;
+}
+.result{
+    text-align: center;
+    background: url('../img/Screenshot_1.png');
+    opacity: 0.5;
+    border: 1px solid #467eb6cb ;
+    padding: 15px;
+    margin: 10px;
+    transition: 500ms;
+}
+.result:hover{
+   
+    opacity: 1;
+    border: 1px solid #ffffffcb ;
+   
+}
+@media screen and (max-width: 1200px){
+    .search{
+        padding: 1rem;
+    }
+    .searchInput{
+        margin: 0 auto;
+        width: 75%;
+    }
+    .result > img{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1024px){.search{ padding: 1rem;}.searchInput{ margin: 0 7rem; width: 75%; }.result > img{ width: 75%; }}
+@media screen and (max-width: 767px){.search{ padding: 1rem; } .searchInput{  margin: 0; width: 100%;} .result > img{ width: 75%; }}
+@media (min-width: 315px) and (max-width: 576px){.search{ padding: 1rem; }.searchInput{ margin: 0;width: 100%;}.result > img{width: 100%;}}
